@@ -213,7 +213,7 @@ h1 em, h2 em { font-style: italic; color: var(--teal-500); }
   border-radius: 14px; box-shadow: var(--shadow-md);
 }
 .about-card span { display: block; font-size: .72rem; letter-spacing: .14em; text-transform: uppercase; color: var(--gold-light); }
-.about-card strong { font-family: var(--font-head); font-size: 1.15rem; }
+.about-card strong { font-family: var(--font-head); font-size: 1.02rem; line-height: 1.5; display: block; }
 
 .about-content h2 { margin-bottom: 22px; }
 .about-content p { color: var(--slate); margin-bottom: 16px; }
