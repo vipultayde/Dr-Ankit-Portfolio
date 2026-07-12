@@ -89,18 +89,17 @@ document.addEventListener('keydown', e => {
   if (e.key === 'ArrowRight') showLightbox(current + 1);
 });
 
-// ── Contact form → opens mail client with prefilled message ──
+// ── Contact form → opens WhatsApp chat with prefilled message ──
 const form = document.getElementById('contactForm');
 const formNote = document.getElementById('formNote');
 form.addEventListener('submit', e => {
   e.preventDefault();
   const data = new FormData(form);
-  const subject = encodeURIComponent(`Website enquiry from ${data.get('name')}`);
-  const body = encodeURIComponent(
-    `Name: ${data.get('name')}\nPhone: ${data.get('phone') || '-'}\nEmail: ${data.get('email')}\n\nMessage:\n${data.get('message')}`
+  const text = encodeURIComponent(
+    `Hello Dr. Ankit, I am ${data.get('name')}.\n\n${data.get('message')}\n\nPhone: ${data.get('phone') || '-'}\nEmail: ${data.get('email')}`
   );
-  window.location.href = `mailto:drankittaide@gmail.com?subject=${subject}&body=${body}`;
-  formNote.textContent = 'Opening your email app… You can also call directly at +91 80875 81077.';
+  window.open(`https://wa.me/918087581077?text=${text}`, '_blank', 'noopener');
+  formNote.textContent = 'Opening WhatsApp… You can also call directly at +91 80875 81077.';
 });
 
 // ── Footer year ──
