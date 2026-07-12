@@ -10,25 +10,43 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css?v=2">
 <noscript><style>.reveal,.reveal-img{opacity:1 !important;transform:none !important}</style></noscript>
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚕️</text></svg>">
+<link rel="icon" href="images/caduceus.svg" type="image/svg+xml">
 </head>
 <body>
+
+<!-- ══════════ SHARED ICONS ══════════ -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="caduceus" viewBox="0 0 100 100">
+    <circle cx="50" cy="8.5" r="6" fill="currentColor"/>
+    <path d="M44.5 16 L55.5 16 L53.8 20.5 L46.2 20.5 Z" fill="currentColor"/>
+    <path d="M47.6 20.5 L52.4 20.5 L51 82 L50 97 L49 82 Z" fill="currentColor"/>
+    <path d="M53.5 23 C63 13.5, 82 9, 97 12 C87 16.5, 77 20.5, 66.5 25 C61 27, 56 26, 53.5 23 Z" fill="currentColor"/>
+    <path d="M54 28 C64 21.5, 81 19, 93.5 21.5 C84 26, 74 29.5, 64.5 32 C59.5 33.2, 55.5 31.5, 54 28 Z" fill="currentColor"/>
+    <path d="M54 33.5 C62.5 28.5, 77 27.5, 87.5 29.5 C79 33.5, 70 36.5, 61.5 38.3 C57.8 39, 54.8 36.8, 54 33.5 Z" fill="currentColor"/>
+    <path d="M54 39.5 C60.5 36, 71 35.8, 79.5 38 C72.5 41.3, 65.5 43.6, 59 44.5 C56 44.9, 54.2 42.5, 54 39.5 Z" fill="currentColor"/>
+    <path d="M54 45.5 C59 43, 66.5 43, 72.5 44.8 C67 47.4, 61.5 49.1, 56.8 49.7 C54.9 49.9, 54 47.8, 54 45.5 Z" fill="currentColor"/>
+    <g transform="translate(100,0) scale(-1,1)">
+      <path d="M53.5 23 C63 13.5, 82 9, 97 12 C87 16.5, 77 20.5, 66.5 25 C61 27, 56 26, 53.5 23 Z" fill="currentColor"/>
+      <path d="M54 28 C64 21.5, 81 19, 93.5 21.5 C84 26, 74 29.5, 64.5 32 C59.5 33.2, 55.5 31.5, 54 28 Z" fill="currentColor"/>
+      <path d="M54 33.5 C62.5 28.5, 77 27.5, 87.5 29.5 C79 33.5, 70 36.5, 61.5 38.3 C57.8 39, 54.8 36.8, 54 33.5 Z" fill="currentColor"/>
+      <path d="M54 39.5 C60.5 36, 71 35.8, 79.5 38 C72.5 41.3, 65.5 43.6, 59 44.5 C56 44.9, 54.2 42.5, 54 39.5 Z" fill="currentColor"/>
+      <path d="M54 45.5 C59 43, 66.5 43, 72.5 44.8 C67 47.4, 61.5 49.1, 56.8 49.7 C54.9 49.9, 54 47.8, 54 45.5 Z" fill="currentColor"/>
+    </g>
+    <ellipse cx="42.3" cy="26.5" rx="3.3" ry="2.7" fill="currentColor"/>
+    <ellipse cx="57.7" cy="26.5" rx="3.3" ry="2.7" fill="currentColor"/>
+    <g fill="none" stroke="currentColor" stroke-width="3.6" stroke-linecap="round">
+      <path d="M42.5 28 C42.5 33, 57.5 35, 57.5 41 C57.5 47, 42.5 49, 42.5 55 C42.5 61, 57.5 63, 57.5 69 C57.5 74.5, 47 76, 48.5 81.5"/>
+      <path d="M57.5 28 C57.5 33, 42.5 35, 42.5 41 C42.5 47, 57.5 49, 57.5 55 C57.5 61, 42.5 63, 42.5 69 C42.5 74.5, 53 76, 51.5 81.5"/>
+    </g>
+  </symbol>
+</svg>
 
 <!-- ══════════ NAVBAR ══════════ -->
 <header class="navbar" id="navbar">
   <div class="container nav-inner">
     <a href="#home" class="brand">
       <span class="brand-mark" aria-hidden="true">
-        <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" fill="none">
-          <circle cx="32" cy="7.5" r="4" fill="currentColor"/>
-          <rect x="30.1" y="12.5" width="3.8" height="46" rx="1.9" fill="currentColor"/>
-          <path d="M27 19 C21 11, 8 10, 3.5 13.5 C9 15, 11 16.5, 13 19 C8 19, 5.5 21, 4.5 23.5 C10 23.5, 13 24.5, 15.5 26.5 C12 27.5, 10.5 29, 10 31 C17 31, 24 27, 27 21.5 Z" fill="currentColor"/>
-          <path d="M37 19 C43 11, 56 10, 60.5 13.5 C55 15, 53 16.5, 51 19 C56 19, 58.5 21, 59.5 23.5 C54 23.5, 51 24.5, 48.5 26.5 C52 27.5, 53.5 29, 54 31 C47 31, 40 27, 37 21.5 Z" fill="currentColor"/>
-          <circle cx="24.5" cy="21" r="2.4" fill="currentColor"/>
-          <circle cx="39.5" cy="21" r="2.4" fill="currentColor"/>
-          <path d="M24.5 21.5 C24.5 26, 39.5 27.5, 39.5 32.5 C39.5 37.5, 24.5 38.5, 24.5 43.5 C24.5 48.5, 39.5 49.5, 39.5 54.5" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/>
-          <path d="M39.5 21.5 C39.5 26, 24.5 27.5, 24.5 32.5 C24.5 37.5, 39.5 38.5, 39.5 43.5 C39.5 48.5, 24.5 49.5, 24.5 54.5" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/>
-        </svg>
+        <svg viewBox="0 0 100 100"><use href="#caduceus"/></svg>
       </span>
       <span class="brand-text">Dr. Ankit <strong>Taide</strong><small>MBBS, MS (General Surgery)</small></span>
     </a>
@@ -386,16 +404,7 @@
   <div class="container footer-inner">
     <div class="footer-brand">
       <span class="brand-mark" aria-hidden="true">
-        <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" fill="none">
-          <circle cx="32" cy="7.5" r="4" fill="currentColor"/>
-          <rect x="30.1" y="12.5" width="3.8" height="46" rx="1.9" fill="currentColor"/>
-          <path d="M27 19 C21 11, 8 10, 3.5 13.5 C9 15, 11 16.5, 13 19 C8 19, 5.5 21, 4.5 23.5 C10 23.5, 13 24.5, 15.5 26.5 C12 27.5, 10.5 29, 10 31 C17 31, 24 27, 27 21.5 Z" fill="currentColor"/>
-          <path d="M37 19 C43 11, 56 10, 60.5 13.5 C55 15, 53 16.5, 51 19 C56 19, 58.5 21, 59.5 23.5 C54 23.5, 51 24.5, 48.5 26.5 C52 27.5, 53.5 29, 54 31 C47 31, 40 27, 37 21.5 Z" fill="currentColor"/>
-          <circle cx="24.5" cy="21" r="2.4" fill="currentColor"/>
-          <circle cx="39.5" cy="21" r="2.4" fill="currentColor"/>
-          <path d="M24.5 21.5 C24.5 26, 39.5 27.5, 39.5 32.5 C39.5 37.5, 24.5 38.5, 24.5 43.5 C24.5 48.5, 39.5 49.5, 39.5 54.5" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/>
-          <path d="M39.5 21.5 C39.5 26, 24.5 27.5, 24.5 32.5 C24.5 37.5, 39.5 38.5, 39.5 43.5 C39.5 48.5, 24.5 49.5, 24.5 54.5" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/>
-        </svg>
+        <svg viewBox="0 0 100 100"><use href="#caduceus"/></svg>
       </span>
       <div>
         <strong>Dr. Ankit Arvind Taide</strong>
